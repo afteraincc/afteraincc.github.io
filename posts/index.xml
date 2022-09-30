@@ -1,0 +1,9 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>All Posts - AFTERAIN个人网站</title><link>https://afterain.cc/posts/</link><description>All Posts | AFTERAIN个人网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>afteraincc@gmail.com (afteraincc)</managingEditor><webMaster>afteraincc@gmail.com (afteraincc)</webMaster><lastBuildDate>Thu, 29 Sep 2022 10:04:39 +0800</lastBuildDate><atom:link href="https://afterain.cc/posts/" rel="self" type="application/rss+xml"/><item><title>安装配置RaspberryPi</title><link>https://afterain.cc/raspberrypi/</link><pubDate>Thu, 29 Sep 2022 10:04:39 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/raspberrypi/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/img/rpi.png" referrerpolicy="no-referrer">
+            </div><h3 id="安装系统">安装系统</h3>
+<ul>
+<li>
+<p>下载 <a href="https://www.raspberrypi.com/software/operating-systems/" target="_blank" rel="noopener noreffer ">操作系统镜像</a></p>
+<p>树莓派有很多发行版，官方支持的<code>Raspberry Pi OS</code>就有多个版本（桌面版本，桌面版本+推荐软件，精简版）可供选择。场景是用树莓派做服务器，不连接显示器/键盘/鼠标，所以选择的精简版。</p>
+</li>
+</ul>]]></description></item></channel></rss>
