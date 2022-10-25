@@ -2,8 +2,8 @@
 title: "安装配置RaspberryPi"
 date: 2022-09-29T10:04:39+08:00
 draft: false
-tags: ['raspberrypi']
-categories: ['tech']
+tags: ['树莓派']
+categories: ['技术']
 featuredImage: /img/rpi.png
 ---
 
