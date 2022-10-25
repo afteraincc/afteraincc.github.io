@@ -4,7 +4,7 @@ date: 2022-09-29T10:04:39+08:00
 draft: false
 tags: ['树莓派']
 categories: ['技术']
-featuredImage: /img/rpi.png
+featuredImage: /img/posts/raspberrypi.png
 ---
 
 ### 安装系统
