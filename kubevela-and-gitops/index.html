@@ -1,0 +1,112 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>安装配置Kubevela和GitOps - AFTERAIN个人网站</title><meta name=Description content="This is my cool site"><meta property="og:title" content="安装配置Kubevela和GitOps"><meta property="og:description" content="安装
+KubeVela需要一个K8S集群作为管控平台，Mac的个人开发环境下，最方便的是直接安装Docker Desktop。安装完成后，可以把其他K8S集群加入KubeVela进行管理。"><meta property="og:type" content="article"><meta property="og:url" content="https://afterain.cc/kubevela-and-gitops/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-10-26T18:21:39+08:00"><meta property="article:modified_time" content="2022-10-26T18:40:15+08:00"><meta property="og:site_name" content="My cool site"><meta name=twitter:card content="summary"><meta name=twitter:title content="安装配置Kubevela和GitOps"><meta name=twitter:description content="安装
+KubeVela需要一个K8S集群作为管控平台，Mac的个人开发环境下，最方便的是直接安装Docker Desktop。安装完成后，可以把其他K8S集群加入KubeVela进行管理。"><meta name=application-name content="AFTERAIN个人网站"><meta name=apple-mobile-web-app-title content="AFTERAIN个人网站"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://afterain.cc/kubevela-and-gitops/><link rel=prev href=https://afterain.cc/k8s-on-raspberrypi/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"安装配置Kubevela和GitOps","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/afterain.cc\/kubevela-and-gitops\/"},"genre":"posts","keywords":"KubeVela, Kubernetes, GitOps","wordcount":1747,"url":"https:\/\/afterain.cc\/kubevela-and-gitops\/","datePublished":"2022-10-26T18:21:39+08:00","dateModified":"2022-10-26T18:40:15+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"afteraincc"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"light"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"light"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=AFTERAIN个人网站>AFTERAIN</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/ title=Home>首页 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/ title=tags>标签 </a><a class=menu-item href=/categories/ title=categories>分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=AFTERAIN个人网站>AFTERAIN</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/ title=Home>首页</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title=tags>标签</a><a class=menu-item href=/categories/ title=categories>分类</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">安装配置Kubevela和GitOps</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=afterain.cc title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>afteraincc</a></span>&nbsp;<span class=post-category>included in <a href=/categories/%E6%8A%80%E6%9C%AF/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-10-26>2022-10-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;1747 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;4 minutes&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#安装>安装</a></li><li><a href=#配置>配置</a></li><li><a href=#配置gitops>配置GitOps</a></li><li><a href=#补充>补充</a></li></ul></li></ul></nav></div></div><div class=content id=content><h3 id=安装>安装</h3><p>KubeVela需要一个K8S集群作为管控平台，Mac的个人开发环境下，最方便的是直接安装<code>Docker Desktop</code>。安装完成后，可以把其他K8S集群加入KubeVela进行管理。</p><p><strong>注意：不要在个人环境下安装给线上提供服务的KubeVela管控平台/集群，稳定性和数据备份等都不完善</strong></p><ul><li><p>KubeVela</p><p><code>vela install</code></p><p>注意：不支持arm架构（例如RaspberryPi），在执行到Job<code>kubevela-vela-core-admission-create</code>时，Pod会提示错误信息<code>standard_init_linux.go:228: exec user process caused: exec format error</code></p></li><li><p>dashboard</p><p><code>vela addon enable velaux serviceType=NodePort repo=acr.kubevela.net</code></p><ul><li><p>如何访问</p><p>执行返回结果<code>ENDPOINT</code>有端口信息，在浏览器访问<code>http://localhost:port</code>即可</p><ul><li><p>初始账号/密码</p><p>执行<code>vela logs -n vela-system --name apiserver addon-velaux | grep "initialized admin username"</code></p><p>类似输出<code>apiserver-655b77f8fd-l9tz8 apiserver 2022-05-19T07:40:35.530349180Z {"level":"info","ts":1652946035.5300071,"caller":"usecase/user.go:109","msg":"initialized admin username and password: admin / o32v564hof\n"}</code>，内容中<code>admin</code>是账号，<code>o32v564hof</code>是密码。</p></li><li><p>端口</p><p>因为<code>Docker Desktop for Mac</code>的<code>docker0 bridge</code>是运行在一个Linux的虚拟机中（参考官方文档<a href=https://docs.docker.com/desktop/mac/networking/ target=_blank rel="noopener noreffer">Networking features</a>），Host下无法直接访问容器（包括Kubernetes的Ingress）。但是可以通过<code>Port Mapping</code>的机制暴露到Host中，所以安装时使用<code>NodePort</code>作为serviceType。</p></li></ul></li></ul></li></ul><h3 id=配置>配置</h3><ul><li><p>fluxcd</p><p>安装helm相关的应用需要依赖fluxcd这个addon，通过dashboard或命令行安装都可以</p></li><li><p>GitOps</p><p>GitOps的前提是需要一个git仓库，为了方便在没有网络/无法访问公司仓库时·测试/调试，个人开发环境可以安装一个独立/轻量的git仓库服务。</p><ul><li><p>gitea</p><p>执行<code>vela up -f gitea.yaml</code>安装。</p><ul><li><p>关键参数</p><p>要能正常访问（原因见前面的dashboard的端口说明），Service需要配置nodePort</p><pre tabindex=0><code>service:
+http:
+  nodePort: 30000
+  type: NodePort
+</code></pre></li></ul></li><li><p>监听git仓库</p><p>执行<code>vela up -f infra.yaml</code>安装。安装成功后，vela将自动监听git仓库变化自动同步K8S集群。</p><ul><li><p>关键参数</p><ul><li><p>仓库地址</p><p>gitea容器的服务端口是3000，注意因为fluxcd和gitea不在同一个namespace下，域名使用了服务的完整地址（服务的域名规则参考K8S的域名解析相关文档）。</p><pre tabindex=0><code># 将此处替换成你需要监听的 git 配置仓库地址
+url: http://gitea-http.default.svc.cluster.local:3000/dev/docker-desktop.git
+  		```
+
+  	- 监听目录
+
+  		根据实际情况填写路径
+
+  		```
+# 监听变动的路径，指向仓库中 infra 目录下的文件
+path: ./infra
+</code></pre></li></ul></li></ul></li><li><p>完整yaml配置如下：</p><pre tabindex=0><code>## gitea.yaml
+kind: Application
+apiVersion: core.oam.dev/v1alpha2
+metadata:
+  name: gitea
+spec:
+  components:
+    - name: gitea
+      type: helm
+      properties:
+        repoType: helm
+        url: &#39;https://dl.gitea.io/charts/&#39;
+        chart: gitea
+        version: 5.0.0
+        values:
+          gitea:
+            config:
+              cache:
+                ADAPTER: memory
+                ENABLED: true
+                HOST: &#39;127.0.0.1:9090&#39;
+                INTERVAL: 60
+          ingress:
+            enabled: true
+            hosts:
+              - host: xxx
+                paths:
+                  - path: /
+                    pathType: Prefix
+          memcached:
+            enabled: false
+          persistence.size: 1Gi
+          service:
+            http:
+              nodePort: 30000
+              type: NodePort
+</code></pre><pre tabindex=0><code>## infra.yaml
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: infra
+spec:
+  components:
+  - name: infra-source
+    type: kustomize
+    properties:
+      repoType: git
+      # 将此处替换成你需要监听的 git 配置仓库地址
+      url: http://gitea-http.default.svc.cluster.local:3000/dev/docker-desktop.git
+      # 如果是私有仓库，还需要关联 git secret
+      #secretRef: git-secret
+      # 自动拉取配置的时间间隔，由于基础设施的变动性较小，此处设置为十分钟
+      pullInterval: 10m
+      git:
+        # 监听变动的分支
+        branch: master
+      # 监听变动的路径，指向仓库中 infra 目录下的文件
+      path: ./infra
+</code></pre></li></ul></li></ul><h3 id=配置gitops>配置GitOps</h3><ul><li><p>创建git仓库</p><p>打开gitea <a href=http://localhost:3000 target=_blank rel="noopener noreffer">http://localhost:3000</a>，第一个注册的账号是管理员。</p><p>新建一个git仓库，<code>签名信任模型</code>选择<code>默认信任模型</code>，这样可以匿名clone仓库，但是不能push代码。</p></li><li><p>clone仓库</p><p><code>git clone http://localhost:30000/gitdev/docker-desktop.git</code></p></li><li><p>备份集群相关代码</p><p>仓库根目录创建<code>clusters</code>，并把之前的<code>gitea.yaml</code>和<code>infra.yaml</code>添加到目录并提交。</p></li><li><p>增加其他应用</p><p>仓库根目录创建<code>infra</code>目录，然后根据需要（参考vela文档）增加即可。例如安装<code>prometheus</code>。</p><p>因为是虚拟机环境，注意配置helm的变量如下，否则无法正常启动<code>prometheus-node-exporter</code>。</p><pre tabindex=0><code>values:
+  nodeExporter:
+    hostRootfs: false
+</code></pre></li><li><p>完整代码</p><pre tabindex=0><code>apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: prometheus
+spec:
+  components:
+  - name: prometheus
+    type: helm
+    properties:
+      repoType: &#34;helm&#34;
+      url: &#34;https://prometheus-community.github.io/helm-charts&#34;
+      chart: &#34;prometheus&#34;
+      version: &#34;15.8.7&#34;
+      values:
+        nodeExporter:
+          hostRootfs: false
+</code></pre></li></ul><h3 id=补充>补充</h3><ul><li><p>如何修改自定义域名</p><p>编辑 coredns 配置 <code>kubectl -n kube-system edit configmap coredns</code></p><p>在<code>data.Corefile</code>内容中增加：</p><pre tabindex=0><code>  hosts {
+      10.10.10.10 example.com
+      fallthrough
+  }
+</code></pre></li><li><p>如何离线安装镜像</p><p>有些镜像需要翻墙才能正常访问，可以先找一个能访问的PC下载，然后离线安装到设备中</p><ul><li><p>下载</p><p>能访问的PC通过pull命令即可下载。如何是下载ARM平台的，需要设置<code>OS/ARCH</code>参数，例如：</p><p><code>docker pull --platform linux/arm/v7 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.4.1</code></p></li><li><p>保存</p><p><code>docker save k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.4.1 -o kube-state-metrics-v2.4.1.tar.gz</code></p></li><li><p>安装</p><p>gz包上传到无法访问的设备，执行：</p><p><code>docker import kube-state-metrics-v2.4.1.tar.gz</code></p><p>如果不是使用docker，而是cri，执行：</p><p><code>ctr image import kube-state-metrics-v2.4.1.tar.gz</code></p></li></ul></li></ul></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-10-26&nbsp;<a class=git-hash href=https://github.com/afteraincc/afteraincc.github.io/commit/a1fba825eb05a3ea0d3b3743450abd99c0de78ad target=_blank title="commit by afteraincc(afteraincc@gmail.com) a1fba825eb05a3ea0d3b3743450abd99c0de78ad: 修正tags值，遵循项目官方名称大小写">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>a1fba82</a></span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://afterain.cc/kubevela-and-gitops/ data-title=安装配置Kubevela和GitOps data-hashtags=KubeVela,Kubernetes,GitOps><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://afterain.cc/kubevela-and-gitops/ data-hashtag=KubeVela><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://afterain.cc/kubevela-and-gitops/ data-title=安装配置Kubevela和GitOps><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=https://afterain.cc/kubevela-and-gitops/ data-title=安装配置Kubevela和GitOps><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://afterain.cc/kubevela-and-gitops/ data-title=安装配置Kubevela和GitOps><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/kubevela/>KubeVela</a>,&nbsp;<a href=/tags/kubernetes/>Kubernetes</a>,&nbsp;<a href=/tags/gitops/>GitOps</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/k8s-on-raspberrypi/ class=prev rel=prev title=在树莓派上运行Kubernetes><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>在树莓派上运行Kubernetes</a></div></div><div id=comments></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/about/ target=_blank>afteraincc</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:50},comment:{},lightgallery:!0,search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
