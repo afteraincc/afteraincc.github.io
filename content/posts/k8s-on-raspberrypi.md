@@ -153,7 +153,27 @@ seo:
 			NAME          STATUS   ROLES                  AGE     VERSION
 			raspberrypi   Ready    control-plane,master   9m46s   v1.22.5+k3s1
 
-- 更换容器镜像源
+- 更换容器镜像源-新
+
+	以 root 身份创建`/etc/rancher/k3s/registries.yaml`文件
+
+	使用USTC的例子：
+
+		mirrors:
+		    docker.io:
+		        endpoint:
+		            - https://docker.mirrors.ustc.edu.cn/
+		            - https://registry-1.docker.io
+		        rewrite: {}
+		configs: {}
+		auths: {}
+
+	参考文档：
+
+	- 英文 [Private Registry Configuration](https://docs.k3s.io/installation/private-registry)
+	- 中文 [私有镜像仓库配置参考](https://docs.rancher.cn/docs/k3s/installation/private-registry/_index/#mirrors)
+
+- 更换容器镜像源-旧（可忽略）
 
 	参考k3s官方的[配置containerd文档](https://rancher.com/docs/k3s/latest/en/advanced/#configuring-containerd)
 		
