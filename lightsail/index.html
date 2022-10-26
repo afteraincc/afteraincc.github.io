@@ -1,0 +1,82 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>安装配置lightsail - AFTERAIN个人网站</title><meta name=Description content="This is my cool site"><meta property="og:title" content="安装配置lightsail"><meta property="og:description" content="安装
+
+
+选择区域
+Tokyo, Zone A (ap-northeast-1a)
+
+
+选择系统
+Platform： Linux
+blueprint： OS Only => Debian 11.4
+
+"><meta property="og:type" content="article"><meta property="og:url" content="https://afterain.cc/lightsail/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-10-26T07:33:05+08:00"><meta property="article:modified_time" content="2022-10-26T08:11:24+08:00"><meta property="og:site_name" content="My cool site"><meta name=twitter:card content="summary"><meta name=twitter:title content="安装配置lightsail"><meta name=twitter:description content="安装
+
+
+选择区域
+Tokyo, Zone A (ap-northeast-1a)
+
+
+选择系统
+Platform： Linux
+blueprint： OS Only => Debian 11.4
+
+"><meta name=application-name content="AFTERAIN个人网站"><meta name=apple-mobile-web-app-title content="AFTERAIN个人网站"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://afterain.cc/lightsail/><link rel=prev href=https://afterain.cc/githubpages/><link rel=next href=https://afterain.cc/v2ray/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"安装配置lightsail","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/afterain.cc\/lightsail\/"},"genre":"posts","keywords":"AWS, 科学上网","wordcount":736,"url":"https:\/\/afterain.cc\/lightsail\/","datePublished":"2022-10-26T07:33:05+08:00","dateModified":"2022-10-26T08:11:24+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"afteraincc"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"light"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"light"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=AFTERAIN个人网站>AFTERAIN</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/ title=Home>首页 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/ title=tags>标签 </a><a class=menu-item href=/categories/ title=categories>分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=AFTERAIN个人网站>AFTERAIN</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/ title=Home>首页</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title=tags>标签</a><a class=menu-item href=/categories/ title=categories>分类</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">安装配置lightsail</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=afterain.cc title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>afteraincc</a></span>&nbsp;<span class=post-category>included in <a href=/categories/%E6%8A%80%E6%9C%AF/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-10-26>2022-10-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;736 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;2 minutes&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/img/posts/amazon-lightsail.svg data-srcset="/img/posts/amazon-lightsail.svg, /img/posts/amazon-lightsail.svg 1.5x, /img/posts/amazon-lightsail.svg 2x" data-sizes=auto alt=/img/posts/amazon-lightsail.svg title=/img/posts/amazon-lightsail.svg></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#安装>安装</a></li><li><a href=#配置防火墙>配置防火墙</a></li><li><a href=#ssh登陆>SSH登陆</a></li><li><a href=#其他>其他</a></li><li><a href=#everyascode自动化脚本>EveryAsCode自动化脚本</a></li></ul></li></ul></nav></div></div><div class=content id=content><h3 id=安装>安装</h3><ul><li><p>选择区域</p><p>Tokyo, Zone A (ap-northeast-1a)</p></li><li><p>选择系统</p><p>Platform： Linux</p><p>blueprint： OS Only => Debian 11.4</p></li></ul><ul><li><p>选择配置/费用</p><p>配置：1vCPU/512MB</p><p>流量：1TB流量</p><pre><code>  注意流量的规则较为复杂：流量=输入+输出
+  所以在代理方式使用场景下，相当于实际512GB流量
+  折算为7x24小时不间断使用带宽=512*1000/30/86400*8～=1.58Mbps，个人使用基本够用
+
+  超出流量后：
+  	输入的免费（相当于lightsail从外部下载的内容）
+  	输出的额外收费（相当于代理从lightsail下载的内容）
+  	所以超出的流量实际相当于半价
+</code></pre><p>费用：3.5$/月</p></li></ul><h3 id=配置防火墙>配置防火墙</h3><p>开放端口： 22/80/443</p><p>默认已经开放22和80端口，只需要新增443端口即可</p><h3 id=ssh登陆>SSH登陆</h3><p>系统的SSH默认配置不允许密码登陆，需要先<a href=https://lightsail.aws.amazon.com/ls/webapp/account/keys target=_blank rel="noopener noreffer">下载私钥</a></p><p>默认账号<code>admin</code>，ssh admin@xxx</p><h3 id=其他>其他</h3><p>根据实际需要安装代理等</p><h3 id=everyascode自动化脚本>EveryAsCode自动化脚本</h3><p>lightsail支持<a href=https://docs.aws.amazon.com/cli/latest/reference/lightsail/index.html target=_blank rel="noopener noreffer">CLI</a>和<a href=https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/Welcome.html target=_blank rel="noopener noreffer">API</a></p><ul><li><p>前置依赖</p><ul><li><p>用户</p><p>从安全考虑，为自动化创建lightsail实例<a href=https://us-east-1.console.aws.amazon.com/iamv2/home#/users target=_blank rel="noopener noreffer">新建专用账号</a></p><ul><li><p>权限</p><p><a href=https://us-east-1.console.aws.amazon.com/iamv2/home#/policies target=_blank rel="noopener noreffer">创建专用policy</a>，只赋予必要权限。这样即使不小心泄漏了用户的AK，也不会造成太大的危害</p><p>创建实例和配置防火墙权限：</p><pre tabindex=0><code>lightsail:CreateInstances
+lightsail:OpenInstancePublicPorts
+</code></pre><p>查询系统（blueprint）和配置（bundle）权限：</p><pre tabindex=0><code>lightsail:GetBlueprints
+lightsail:GetBundles
+</code></pre></li></ul></li><li><p>SSH Key</p><p>如果不使用默认SSH Key，可以<a href=https://lightsail.aws.amazon.com/ls/webapp/account/keys target=_blank rel="noopener noreffer">创建一个</a></p></li><li><p>Toolchain</p><ul><li><p><a href=https://docs.aws.amazon.com/zh_tw/cli/latest/userguide/cli-chap-welcome.html target=_blank rel="noopener noreffer">AWS CLI</a></p><p>执行<code>aws configure</code>配置<code>Access Key ID</code>，<code>Secret Access Key</code>和<code>Default region name</code>（ap-northeast-1）</p></li></ul></li></ul></li><li><p>脚本<code>create-lightsail.sh</code></p></li></ul><pre tabindex=0><code>#!/bin/bash
+INSTANCE_NAME=&#39;debian-11-v2ray&#39;
+
+ret=$(aws lightsail get-instance --no-cli-pager \
+      --instance-name $INSTANCE_NAME | grep &#39;NotFoundException&#39;)
+if [ ! -z $ret ]; then
+    aws lightsail create-instances --no-cli-pager \
+      --instance-names $INSTANCE_NAME \
+      --availability-zone ap-northeast-1a \
+      --blueprint-id debian_11 \
+      --bundle-id nano_2_0 \
+      --ip-address-type ipv4 \
+      --key-pair-name macbook-pro
+    if [ $? -ne 0 ]; then
+        echo -e &#34;\033[31mcreate instance error\033[0m&#34;
+        exit 1
+    fi
+else
+    echo -e &#34;\033[32m$INSTANCE_NAME is exist\033[0m&#34;
+fi
+
+aws lightsail open-instance-public-ports --no-cli-pager \
+  --instance-name $INSTANCE_NAME \
+  --port-info fromPort=443,protocol=TCP,toPort=443
+if [ $? -ne 0 ]; then
+    echo -e &#34;\033[31mopen public port 443 error\033[0m&#34;
+    exit 1
+fi
+
+echo -n -e &#34;\033[32mpublic ip:\033[0m&#34;
+aws lightsail get-instance --no-cli-pager \
+  --instance-name $INSTANCE_NAME \
+  | grep publicIpAddress | awk &#39;{print $2}&#39; | awk -F &#39;,&#39; &#39;{print $1}&#39;
+</code></pre></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-10-26&nbsp;<a class=git-hash href=https://github.com/afteraincc/afteraincc.github.io/commit/04463277eabc4207940ed7a990bb04c4ad816752 target=_blank title="commit by afteraincc(afteraincc@gmail.com) 04463277eabc4207940ed7a990bb04c4ad816752: 增加文章：安全上网工具V2Ray的安装配置，安装配置lightsail">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>0446327</a></span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://afterain.cc/lightsail/ data-title=安装配置lightsail data-hashtags=AWS,科学上网><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://afterain.cc/lightsail/ data-hashtag=AWS><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://afterain.cc/lightsail/ data-title=安装配置lightsail><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=https://afterain.cc/lightsail/ data-title=安装配置lightsail><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://afterain.cc/lightsail/ data-title=安装配置lightsail data-image=/img/posts/amazon-lightsail.svg><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/aws/>AWS</a>,&nbsp;<a href=/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/>科学上网</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/githubpages/ class=prev rel=prev title=使用GitHub免费搭建个人网站><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>使用GitHub免费搭建个人网站</a>
+<a href=/v2ray/ class=next rel=next title=安全上网工具V2Ray的安装配置>安全上网工具V2Ray的安装配置<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/about/ target=_blank>afteraincc</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:50},comment:{},lightgallery:!0,search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>

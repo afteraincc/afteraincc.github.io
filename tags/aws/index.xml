@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>AWS - Tag - AFTERAIN个人网站</title><link>https://afterain.cc/tags/aws/</link><description>AWS - Tag - AFTERAIN个人网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>afteraincc@gmail.com (afteraincc)</managingEditor><webMaster>afteraincc@gmail.com (afteraincc)</webMaster><lastBuildDate>Wed, 26 Oct 2022 07:33:05 +0800</lastBuildDate><atom:link href="https://afterain.cc/tags/aws/" rel="self" type="application/rss+xml"/><item><title>安装配置lightsail</title><link>https://afterain.cc/lightsail/</link><pubDate>Wed, 26 Oct 2022 07:33:05 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/lightsail/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/amazon-lightsail.svg" referrerpolicy="no-referrer">
+            </div><h3 id="安装">安装</h3>
+<ul>
+<li>
+<p>选择区域</p>
+<p>Tokyo, Zone A (ap-northeast-1a)</p>
+</li>
+<li>
+<p>选择系统</p>
+<p>Platform： Linux</p>
+<p>blueprint： OS Only =&gt; Debian 11.4</p>
+</li>
+</ul>]]></description></item></channel></rss>

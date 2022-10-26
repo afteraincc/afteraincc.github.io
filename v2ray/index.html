@@ -1,0 +1,272 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>安全上网工具V2Ray的安装配置 - AFTERAIN个人网站</title><meta name=Description content="This is my cool site"><meta property="og:title" content="安全上网工具V2Ray的安装配置"><meta property="og:description" content="安装
+
+
+下载
+wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+
+
+安装
+sudo ./install-release.sh
+
+"><meta property="og:type" content="article"><meta property="og:url" content="https://afterain.cc/v2ray/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-10-26T07:56:03+08:00"><meta property="article:modified_time" content="2022-10-26T08:11:24+08:00"><meta property="og:site_name" content="My cool site"><meta name=twitter:card content="summary"><meta name=twitter:title content="安全上网工具V2Ray的安装配置"><meta name=twitter:description content="安装
+
+
+下载
+wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+
+
+安装
+sudo ./install-release.sh
+
+"><meta name=application-name content="AFTERAIN个人网站"><meta name=apple-mobile-web-app-title content="AFTERAIN个人网站"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://afterain.cc/v2ray/><link rel=prev href=https://afterain.cc/lightsail/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"安全上网工具V2Ray的安装配置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/afterain.cc\/v2ray\/"},"genre":"posts","keywords":"v2ray, 科学上网","wordcount":1350,"url":"https:\/\/afterain.cc\/v2ray\/","datePublished":"2022-10-26T07:56:03+08:00","dateModified":"2022-10-26T08:11:24+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"afteraincc"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"light"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"light"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=AFTERAIN个人网站>AFTERAIN</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/ title=Home>首页 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/ title=tags>标签 </a><a class=menu-item href=/categories/ title=categories>分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=AFTERAIN个人网站>AFTERAIN</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/ title=Home>首页</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title=tags>标签</a><a class=menu-item href=/categories/ title=categories>分类</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">安全上网工具V2Ray的安装配置</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=afterain.cc title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>afteraincc</a></span>&nbsp;<span class=post-category>included in <a href=/categories/%E6%8A%80%E6%9C%AF/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-10-26>2022-10-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;1350 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;3 minutes&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/img/posts/V2Ray_logo.png data-srcset="/img/posts/V2Ray_logo.png, /img/posts/V2Ray_logo.png 1.5x, /img/posts/V2Ray_logo.png 2x" data-sizes=auto alt=/img/posts/V2Ray_logo.png title=/img/posts/V2Ray_logo.png></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#安装>安装</a></li><li><a href=#配置>配置</a></li><li><a href=#网络加速>网络加速</a></li><li><a href=#everyascode自动化脚本>EveryAsCode自动化脚本</a></li></ul></li></ul></nav></div></div><div class=content id=content><h3 id=安装>安装</h3><ul><li><p>下载</p><p><code>wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh</code></p></li><li><p>安装</p><p><code>sudo ./install-release.sh</code></p></li></ul><ul><li><p>启动服务</p><p><code>systemctl enable v2ray && systemctl start v2ray</code></p></li></ul><h3 id=配置>配置</h3><p>WS + TLS这种更安全的方式，依赖web服务器和HTTPS的证书。</p><ul><li><p>域名</p><p>域名服务商购买，并创建一个<code>A</code>记录类型，解析到自己的主机IP地址</p></li><li><p>证书</p><p>个人使用时，证书可以不签名，配置客户端时勾选<code>transport setting</code>-><code>TLS</code>-><code>TLS allowInsecure</code></p><p>执行<code>openssl</code>命令：</p><p><code>openssl req -x509 -subj "/C=CN/ST=x/L=x/O=x/OU=x/CN=x" -nodes -days 3650 -newkey rsa:2048 -keyout x.key -out x.crt</code></p><p>重要参数说明：</p><ul><li><p>证书类型 <code>-x509</code></p></li><li><p>证书过期时间 <code>-days 3650</code> 天</p></li><li><p>指定私钥输出文件 <code>-keyout x.key</code></p></li><li><p>指定证书输出文件 <code>-out x.crt</code></p></li><li><p>证书参数</p><p><code>/C</code>国家 <code>/ST</code>省或州 <code>/L</code>城市 <code>/O</code>组织单位 <code>/OU</code>组织部门 <code>CN</code>通用名（一般填写域名）</p></li></ul></li><li><p>nginx</p><p>关键参数：</p><ul><li><p><code>server_name</code>：<code>x</code>是占位符，需要修改为自己的域名</p></li><li><p><code>ssl_certificate</code>和<code>ssl_certificate_key</code>：<code>x</code>是占位符，x.key/x.crt是前面步骤中的<code>openssl</code>生成</p></li></ul><p>配置文件路径<code>/etc/nginx/sites-enabled/x.conf</code>，<code>x</code>是占位符，可以是任意有效文件名（建议用自己的域名），完整内容如下：</p><pre tabindex=0><code></code></pre></li></ul><p>server {
+listen 443 ssl;
+server_name x;</p><pre><code>ssl_certificate      /etc/ssl/certs/x.crt;
+ssl_certificate_key  /etc/ssl/private/x.key;
+
+ssl_session_cache    shared:SSL:1m;
+ssl_session_timeout  5m;
+
+ssl_ciphers  HIGH:!aNULL:!MD5;
+ssl_prefer_server_ciphers  on;
+
+location /v2ray {
+    proxy_redirect off;
+    proxy_pass http://127.0.0.1:7879;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection &quot;upgrade&quot;;
+    proxy_set_header Host $http_host;
+}
+</code></pre><p>}
+```</p><ul><li><p>v2ray</p><p><code>id</code>可以使用<code>uuidgen</code>生成，配置文件<code>/usr/local/etc/v2ray/config.json</code>，完整内容如下（注：端口7879需要和nginx配置中一致）：</p><pre tabindex=0><code>{
+&#34;log&#34;: {
+    &#34;access&#34;: &#34;/var/log/v2ray/access.log&#34;,
+    &#34;error&#34;: &#34;/var/log/v2ray/error.log&#34;,
+    &#34;loglevel&#34;: &#34;none&#34;
+},
+&#34;inbounds&#34;: [{
+        &#34;port&#34;: 7879,
+        &#34;protocol&#34;: &#34;vmess&#34;,
+        &#34;settings&#34;: {
+            &#34;clients&#34;: [{
+                    &#34;id&#34;: &#34;4BB35D9A-F164-4237-8FB9-4D3460F1556D&#34;,
+                    &#34;level&#34;: 0,
+                    &#34;alterId&#34;: 0
+                }
+            ]
+        },
+        &#34;streamSettings&#34;: {
+            &#34;network&#34;: &#34;ws&#34;,
+            &#34;wsSettings&#34;: {
+                &#34;path&#34;: &#34;/v2ray&#34;
+            }
+        }
+    }
+],
+&#34;outbounds&#34;: [{
+        &#34;protocol&#34;: &#34;freedom&#34;
+    }
+]
+}
+</code></pre></li></ul><h3 id=网络加速>网络加速</h3><p>在<code>高延迟，高带宽</code> 的网络环境下，可以开启BBR来加速网络。</p><ul><li><p>开启</p><pre tabindex=0><code>echo &#34;net.core.default_qdisc=fq&#34; | sudo tee --append /etc/sysctl.conf
+echo &#34;net.ipv4.tcp_congestion_control=bbr&#34; | sudo tee --append /etc/sysctl.conf
+sudo sysctl -p
+</code></pre></li><li><p>确认</p><p><code>lsmod | grep bbr</code></p><p>输出<code>tcp_bbr 20480 1</code>表示成功</p></li></ul><h3 id=everyascode自动化脚本>EveryAsCode自动化脚本</h3><ul><li><p>前置依赖</p><ul><li><p>参数</p><ul><li><p>域名，必选参数</p></li><li><p>[client_id]</p><p>client_id，可选参数。默认空时会自动生成一个新的UUID作为client id</p></li></ul><p>例子：</p><p><code>sudo ./v2ray-ws+tls-install.sh v2ray.yourdomain.com 4E2D399A-5029-4440-ACA1-7E297FD80EC3</code></p></li><li><p>Toolchain</p><p>apt，nginx，openssl，sysctl，systemctl，unzip</p><p>默认nginx，unzip未安装，脚本执行时会自动安装</p></li></ul></li><li><p>脚本<code>v2ray-ws+tls-install.sh</code></p></li></ul><pre tabindex=0><code>#!/bin/bash
+function log_info() {
+    echo -e &#34;\033[32m$@\033[0m&#34;
+}
+
+function log_warn() {
+    echo -e &#34;\033[33m$@\033[0m&#34;
+}
+
+function log_error() {
+    echo -e &#34;\033[31m$@\033[0m&#34;
+}
+
+function main() {
+    local domain=$1
+    local client_id=$2
+    if [ -z $client_id ]; then
+        client_id=$(uuidgen)
+    fi
+
+    log_info &#39;installing v2ray&#39;
+    systemctl is-enabled v2ray 2&gt;/dev/null
+    if [ $? -ne 0 ]; then
+        wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh -o install-release.sh
+        if [ $? -ne 0 ]; then
+          log_error &#39;  download v2ray error&#39;
+          return 1
+        fi
+
+        if ! type $cmd &gt;/dev/null 2&gt;&amp;1; then
+            apt install unzip -y
+            if [ $? -ne 0 ]; then
+              log_error &#39;  install unzip error&#39;
+              return 1
+            fi
+        fi
+        chmod +x install-release.sh &amp;&amp; ./install-release.sh
+        if [ $? -ne 0 ]; then
+          log_error &#39;  install v2ray error&#39;
+          return 1
+        fi
+    else
+        log_warn &#39;  v2ray has installed&#39;
+    fi
+
+    log_info &#39;enabling v2ray service&#39;
+    systemctl enable v2ray
+    if [ $? -ne 0 ]; then
+        log_error &#39;  enable v2ray service error&#39;
+        return 1
+    fi
+
+    log_info &#39;configuring ws+tls&#39;
+    log_info &#39;  generating openssl cert&#39;
+    openssl req -x509 -subj &#39;/C=CN/ST=x/L=x/O=x/OU=x/CN=x&#39; -nodes -days 3650 -newkey rsa:2048 -keyout $domain.key -out $domain.crt
+    if [ $? -ne 0 ]; then
+        log_error &#39;  generate ssl certificate error&#39;
+        return 1
+    fi
+    cp v2r.afterain.cc.crt /etc/ssl/certs/v2r.afterain.cc.crt
+    cp v2r.afterain.cc.key /etc/ssl/private/v2r.afterain.cc.key
+
+    log_info &#39;  installing nginx&#39;
+    if ! type $cmd &gt;/dev/null 2&gt;&amp;1; then
+        apt install nginx -y
+        if [ $? -ne 0 ]; then
+            log_error &#39;  install nginx error&#39;
+            return 1
+        fi
+    fi
+    log_info &#39;  configuring nginx&#39;
+    cat &lt;&lt;EOF | tee /etc/nginx/sites-enabled/$domain.conf 2&gt;&amp;1 1&gt;/dev/null
+server {
+    listen       443 ssl;
+    server_name  $domain;
+
+    ssl_certificate      /etc/ssl/certs/$domain.crt;
+    ssl_certificate_key  /etc/ssl/private/$domain.key;
+
+    ssl_session_cache    shared:SSL:1m;
+    ssl_session_timeout  5m;
+
+    ssl_ciphers  HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers  on;
+
+    location /v2ray {
+        proxy_redirect off;
+        proxy_pass http://127.0.0.1:7879;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade \$http_upgrade;
+        proxy_set_header Connection &#34;upgrade&#34;;
+        proxy_set_header Host \$http_host;
+    }
+}
+EOF
+
+    log_info &#39;configuring v2ray&#39;
+    cat &lt;&lt;EOF | tee /usr/local/etc/v2ray/config.json 2&gt;&amp;1 1&gt;/dev/null
+{
+    &#34;log&#34;: {
+        &#34;access&#34;: &#34;/var/log/v2ray/access.log&#34;,
+        &#34;error&#34;: &#34;/var/log/v2ray/error.log&#34;,
+        &#34;loglevel&#34;: &#34;none&#34;
+    },
+    &#34;inbounds&#34;: [{
+            &#34;port&#34;: 7879,
+            &#34;protocol&#34;: &#34;vmess&#34;,
+            &#34;settings&#34;: {
+                &#34;clients&#34;: [{
+                        &#34;id&#34;: &#34;$client_id&#34;,
+                        &#34;level&#34;: 0,
+                        &#34;alterId&#34;: 0
+                    }
+                ]
+            },
+            &#34;streamSettings&#34;: {
+                &#34;network&#34;: &#34;ws&#34;,
+                &#34;wsSettings&#34;: {
+                    &#34;path&#34;: &#34;/v2ray&#34;
+                }
+            }
+        }
+    ],
+    &#34;outbounds&#34;: [{
+            &#34;protocol&#34;: &#34;freedom&#34;
+        }
+    ]
+}
+EOF
+
+    log_info &#39;starting bbr&#39;
+    grep &#39;net.core.default_qdisc=fq&#39; /etc/sysctl.conf
+    if [ $? -ne 0 ]; then
+        echo &#39;net.core.default_qdisc=fq&#39; | tee --append /etc/sysctl.conf
+    fi
+    grep &#39;net.ipv4.tcp_congestion_control=bbr&#39; /etc/sysctl.conf
+    if [ $? -ne 0 ]; then
+        echo &#39;net.ipv4.tcp_congestion_control=bbr&#39; | tee --append /etc/sysctl.conf
+    fi
+    sysctl -p 2&gt;&amp;1 1&gt;/dev/null
+    if [ $? -ne 0 ]; then
+        log_error &#39;  start bbr error&#39;
+        return 1
+    fi
+
+    log_info &#39;restarting service&#39;
+    log_info &#39;  restarting nginx service&#39;
+    systemctl restart nginx
+    if [ $? -ne 0 ]; then
+        log_error &#39;  restart nginx error&#39;
+        return 1
+    fi
+
+    log_info &#39;  restarting v2ray service&#39;
+    systemctl restart v2ray
+    if [ $? -ne 0 ]; then
+        log_error &#39;  restart v2ray error&#39;
+        return 1
+    fi
+
+    log_info &#39;v2ray connfigure info:&#39;
+    log_info &#34;  address: $domain&#34;
+    log_info &#34;  port: 443&#34;
+    log_info &#34;  client id: $client_id&#34;
+    log_info &#34;  transport-&gt;network: ws&#34;
+    log_info &#34;  transport-&gt;path: /v2ray&#34;
+    log_info &#34;  transport-&gt;tls: Use TLS&#34;
+    log_info &#34;  transport-&gt;tls-&gt;allowInsecure: true&#34;
+    log_info &#34;  transport-&gt;tls-&gt;allowInsecure: true&#34;
+    log_info &#34;  transport-&gt;tls-&gt;serverName: $domain&#34;
+}
+
+if [ -n &#34;$BASH_SOURCE&#34; -a &#34;$BASH_SOURCE&#34; == &#34;$0&#34; ]; then
+    if [ &#34;$(id -u)&#34; != &#34;0&#34; ]; then
+        log_error &#34;please run as root&#34;
+        exit 1
+    fi
+    if [ $# -eq 0 ]; then
+        log_info &#34;$(basename $0) &lt;domain&gt; [client_id]&#34;
+        exit 1
+    fi
+
+    apt update
+    main $@
+fi
+</code></pre></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-10-26&nbsp;<a class=git-hash href=https://github.com/afteraincc/afteraincc.github.io/commit/04463277eabc4207940ed7a990bb04c4ad816752 target=_blank title="commit by afteraincc(afteraincc@gmail.com) 04463277eabc4207940ed7a990bb04c4ad816752: 增加文章：安全上网工具V2Ray的安装配置，安装配置lightsail">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>0446327</a></span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://afterain.cc/v2ray/ data-title=安全上网工具V2Ray的安装配置 data-hashtags=v2ray,科学上网><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://afterain.cc/v2ray/ data-hashtag=v2ray><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://afterain.cc/v2ray/ data-title=安全上网工具V2Ray的安装配置><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=https://afterain.cc/v2ray/ data-title=安全上网工具V2Ray的安装配置><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://afterain.cc/v2ray/ data-title=安全上网工具V2Ray的安装配置 data-image=/img/posts/V2Ray_logo.png><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/v2ray/>v2ray</a>,&nbsp;<a href=/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/>科学上网</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/lightsail/ class=prev rel=prev title=安装配置lightsail><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>安装配置lightsail</a></div></div><div id=comments></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/about/ target=_blank>afteraincc</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:50},comment:{},lightgallery:!0,search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>

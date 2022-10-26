@@ -1,4 +1,29 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>AFTERAIN个人网站</title><link>https://afterain.cc/</link><description>This is my cool site</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>afteraincc@gmail.com (afteraincc)</managingEditor><webMaster>afteraincc@gmail.com (afteraincc)</webMaster><lastBuildDate>Tue, 25 Oct 2022 18:46:06 +0800</lastBuildDate><atom:link href="https://afterain.cc/index.xml" rel="self" type="application/rss+xml"/><item><title>使用GitHub免费搭建个人网站</title><link>https://afterain.cc/githubpages/</link><pubDate>Tue, 25 Oct 2022 18:46:06 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/githubpages/</guid><description><![CDATA[<h3 id="什么是github-pages">什么是GitHub Pages</h3>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>AFTERAIN个人网站</title><link>https://afterain.cc/</link><description>This is my cool site</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>afteraincc@gmail.com (afteraincc)</managingEditor><webMaster>afteraincc@gmail.com (afteraincc)</webMaster><lastBuildDate>Wed, 26 Oct 2022 07:56:03 +0800</lastBuildDate><atom:link href="https://afterain.cc/index.xml" rel="self" type="application/rss+xml"/><item><title>安全上网工具V2Ray的安装配置</title><link>https://afterain.cc/v2ray/</link><pubDate>Wed, 26 Oct 2022 07:56:03 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/v2ray/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/V2Ray_logo.png" referrerpolicy="no-referrer">
+            </div><h3 id="安装">安装</h3>
+<ul>
+<li>
+<p>下载</p>
+<p><code>wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh</code></p>
+</li>
+<li>
+<p>安装</p>
+<p><code>sudo ./install-release.sh</code></p>
+</li>
+</ul>]]></description></item><item><title>安装配置lightsail</title><link>https://afterain.cc/lightsail/</link><pubDate>Wed, 26 Oct 2022 07:33:05 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/lightsail/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/amazon-lightsail.svg" referrerpolicy="no-referrer">
+            </div><h3 id="安装">安装</h3>
+<ul>
+<li>
+<p>选择区域</p>
+<p>Tokyo, Zone A (ap-northeast-1a)</p>
+</li>
+<li>
+<p>选择系统</p>
+<p>Platform： Linux</p>
+<p>blueprint： OS Only =&gt; Debian 11.4</p>
+</li>
+</ul>]]></description></item><item><title>使用GitHub免费搭建个人网站</title><link>https://afterain.cc/githubpages/</link><pubDate>Tue, 25 Oct 2022 18:46:06 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/githubpages/</guid><description><![CDATA[<h3 id="什么是github-pages">什么是GitHub Pages</h3>
 <p><a href="https://pages.github.com/" target="_blank" rel="noopener noreffer ">GitHub Pages</a>是通过git仓库来管理个人或项目网站。</p>
 <p>优势</p>]]></description></item><item><title>安装配置RaspberryPi</title><link>https://afterain.cc/raspberrypi/</link><pubDate>Thu, 29 Sep 2022 10:04:39 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/raspberrypi/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/img/posts/raspberrypi.png" referrerpolicy="no-referrer">

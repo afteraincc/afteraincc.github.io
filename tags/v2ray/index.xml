@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>v2ray - Tag - AFTERAIN个人网站</title><link>https://afterain.cc/tags/v2ray/</link><description>v2ray - Tag - AFTERAIN个人网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>afteraincc@gmail.com (afteraincc)</managingEditor><webMaster>afteraincc@gmail.com (afteraincc)</webMaster><lastBuildDate>Wed, 26 Oct 2022 07:56:03 +0800</lastBuildDate><atom:link href="https://afterain.cc/tags/v2ray/" rel="self" type="application/rss+xml"/><item><title>安全上网工具V2Ray的安装配置</title><link>https://afterain.cc/v2ray/</link><pubDate>Wed, 26 Oct 2022 07:56:03 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/v2ray/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/V2Ray_logo.png" referrerpolicy="no-referrer">
+            </div><h3 id="安装">安装</h3>
+<ul>
+<li>
+<p>下载</p>
+<p><code>wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh</code></p>
+</li>
+<li>
+<p>安装</p>
+<p><code>sudo ./install-release.sh</code></p>
+</li>
+</ul>]]></description></item></channel></rss>
