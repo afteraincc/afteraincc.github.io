@@ -10,7 +10,7 @@ description: ""
 license: ""
 images: []
 
-tags: ['kubernetes', 'homeassistant']
+tags: ['Kubernetes', 'HomeAssistant']
 categories: ['技术']
 
 featuredImage: ""

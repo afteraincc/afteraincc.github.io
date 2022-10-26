@@ -10,7 +10,7 @@ description: ""
 license: ""
 images: []
 
-tags: ['kubernetes', '树莓派']
+tags: ['Kubernetes', '树莓派']
 categories: ['技术']
 
 featuredImage: ""

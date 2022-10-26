@@ -10,7 +10,7 @@ description: ""
 license: ""
 images: []
 
-tags: ['KubeVela', 'kubernetes', 'GitOps']
+tags: ['KubeVela', 'Kubernetes', 'GitOps']
 categories: ['技术']
 
 featuredImage: ""

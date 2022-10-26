@@ -10,7 +10,7 @@ description: ""
 license: ""
 images: []
 
-tags: ['v2ray', '科学上网']
+tags: ['V2Ray', '科学上网']
 categories: ['技术']
 
 featuredImage: "/img/posts/V2Ray_logo.png"
