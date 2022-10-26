@@ -99,29 +99,19 @@ K3s 提供了一个安装脚本，可以方便的在 systemd 或 openrc 的系�
 
 		不支持
 
-- kubeconfig
-
-	- AutoK3s
-
-		和执行机器本地环境的~/.kube/config互相独立，可以通过UI/CLI下载。例子：
-
-		`autok3s kubectl config view --raw > ./download.config`
-
-		合并集群和本地的kubeconfig需要手工处理：
-
-		`KUBECONFIG=$HOME/.kube/config:./download.config && kubectl config view --flatten > all-in-one.config && cp all-in-one.config $HOME/.kube/config`
-
-	- k3sup
-
-		本身支持合并集群和本地的kubeconfig。例子：
-
-		`k3sup install --ip $IP --user $USER --merge --local-path $HOME/.kube/config --context my-k3s`
-
 - 网络加速
 
+	- K3s
+
+		支持配置私有镜像。参考[中文文档](https://docs.rancher.cn/docs/k3s/installation/private-registry/_index/#mirrors)
+		[英文文档](https://docs.k3s.io/installation/private-registry)
+
 	- AutoK3s
 
-		参数可以选择国内加速站点，安装非常快速
+		参数可以选择国内加速站点，安装非常快速。参考[中文文档](https://docs.rancher.cn/docs/k3s/autok3s/native/_index#进阶使用)
+		[英文文档](https://github.com/cnrancher/autok3s/blob/master/docs/i18n/en_us/native/README.md#setting-up-private-registry)
+
+		通过UI创建集群时，可以在这里配置： Create => K3s Options => Registry
 
 	- k3sup
 
@@ -152,3 +142,22 @@ K3s 提供了一个安装脚本，可以方便的在 systemd 或 openrc 的系�
 		无需参数，自动识别本机的ssh-agent
 
 		支持不同账号，使用参数`--server-user`
+
+- kubeconfig
+
+	- AutoK3s
+
+		和执行机器本地环境的~/.kube/config互相独立，可以通过UI/CLI下载。例子：
+
+		`autok3s kubectl config view --raw > ./download.config`
+
+		合并集群和本地的kubeconfig需要手工处理：
+
+		`KUBECONFIG=$HOME/.kube/config:./download.config && kubectl config view --flatten > all-in-one.config && cp all-in-one.config $HOME/.kube/config`
+
+	- k3sup
+
+		本身支持合并集群和本地的kubeconfig。例子：
+
+		`k3sup install --ip $IP --user $USER --merge --local-path $HOME/.kube/config --context my-k3s`
+
