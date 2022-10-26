@@ -1,0 +1,5 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>FFmpeg - Tag - AFTERAIN个人网站</title><link>https://afterain.cc/tags/ffmpeg/</link><description>FFmpeg - Tag - AFTERAIN个人网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>afteraincc@gmail.com (afteraincc)</managingEditor><webMaster>afteraincc@gmail.com (afteraincc)</webMaster><lastBuildDate>Wed, 26 Oct 2022 08:27:45 +0800</lastBuildDate><atom:link href="https://afterain.cc/tags/ffmpeg/" rel="self" type="application/rss+xml"/><item><title>FFmpeg如何添加一个Codec</title><link>https://afterain.cc/ffmpeg-codec/</link><pubDate>Wed, 26 Oct 2022 08:27:45 +0800</pubDate><author>afteraincc</author><guid>https://afterain.cc/ffmpeg-codec/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/FFmpeg-Logo.svg" referrerpolicy="no-referrer">
+            </div><h3 id="简介">简介</h3>
+<p><strong>支持FFmpeg 4.2版本</strong></p>
+<p>用decoder做示例：</p>]]></description></item></channel></rss>
