@@ -153,7 +153,7 @@ K3s 提供了一个安装脚本，可以方便的在 systemd 或 openrc 的系�
 
 		合并集群和本地的kubeconfig需要手工处理：
 
-		`KUBECONFIG=$HOME/.kube/config:./download.config && kubectl config view --flatten > all-in-one.config && cp all-in-one.config $HOME/.kube/config`
+		`KUBECONFIG=$HOME/.kube/config:./download.config kubectl config view --flatten > all-in-one.config && cp all-in-one.config $HOME/.kube/config`
 
 	- k3sup
 
