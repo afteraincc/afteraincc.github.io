@@ -138,6 +138,9 @@ seo:
 			  enabled: true
 			  hosts:
 			    - host: git.yourdomain
+			      paths:
+			        - path: /
+			          pathType: Prefix
 			```
 		
 	- 例子
